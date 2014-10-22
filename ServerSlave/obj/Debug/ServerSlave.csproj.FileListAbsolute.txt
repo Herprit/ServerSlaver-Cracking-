@@ -1,0 +1,10 @@
+C:\Users\Herprit\Dropbox\Distributed password Cracking projekt (Morten, Kenneth, Herprit, Jonas og Andreas)\CrackingSlave\ServerSlave\ServerSlave\bin\Debug\ServerSlave.exe.config
+C:\Users\Herprit\Dropbox\Distributed password Cracking projekt (Morten, Kenneth, Herprit, Jonas og Andreas)\CrackingSlave\ServerSlave\ServerSlave\bin\Debug\ServerSlave.exe
+C:\Users\Herprit\Dropbox\Distributed password Cracking projekt (Morten, Kenneth, Herprit, Jonas og Andreas)\CrackingSlave\ServerSlave\ServerSlave\bin\Debug\ServerSlave.pdb
+C:\Users\Herprit\Dropbox\Distributed password Cracking projekt (Morten, Kenneth, Herprit, Jonas og Andreas)\CrackingSlave\ServerSlave\ServerSlave\obj\Debug\ServerSlave.exe
+C:\Users\Herprit\Dropbox\Distributed password Cracking projekt (Morten, Kenneth, Herprit, Jonas og Andreas)\CrackingSlave\ServerSlave\ServerSlave\obj\Debug\ServerSlave.pdb
+C:\Users\Herprit\Desktop\ServerSlave\ServerSlave\bin\Debug\ServerSlave.exe.config
+C:\Users\Herprit\Desktop\ServerSlave\ServerSlave\obj\Debug\ServerSlave.exe
+C:\Users\Herprit\Desktop\ServerSlave\ServerSlave\obj\Debug\ServerSlave.pdb
+C:\Users\Herprit\Desktop\ServerSlave\ServerSlave\bin\Debug\ServerSlave.exe
+C:\Users\Herprit\Desktop\ServerSlave\ServerSlave\bin\Debug\ServerSlave.pdb
