@@ -15,7 +15,7 @@ namespace ServerSlave
          public void Socket()
        {
      
-           TcpListener serverSocket = new TcpListener(65080);
+           TcpListener serverSocket = new TcpListener(8080);
 
            serverSocket.Start();
            while (true)
@@ -23,17 +23,11 @@ namespace ServerSlave
                TcpClient connectionSocket = serverSocket.AcceptTcpClient();
                //Socket connectionSocket = serverSocket.AcceptSocket();
                Console.WriteLine("Server activated");
-
-
                EchoServices EchoS = new EchoServices(connectionSocket); //henter EchoServices. og metode.
                EchoS.Dolt();
            }
 
            serverSocket.Stop();
-
        }
-
-
-
    }
 }
