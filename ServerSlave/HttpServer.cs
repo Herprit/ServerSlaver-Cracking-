@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml.Schema;
 
 namespace ServerSlave
 {
@@ -14,20 +16,63 @@ namespace ServerSlave
       
          public void Socket()
        {
-     
-           TcpListener serverSocket = new TcpListener(8080);
 
+           TcpListener serverSocket = new TcpListener(8080);
+           TcpClient connectionSocket;
+          
            serverSocket.Start();
            while (true)
-           {
-               TcpClient connectionSocket = serverSocket.AcceptTcpClient();
-               //Socket connectionSocket = serverSocket.AcceptSocket();
+           {    
+               
+               connectionSocket = serverSocket.AcceptTcpClient();
+               
                Console.WriteLine("Server activated");
-               EchoServices EchoS = new EchoServices(connectionSocket); //henter EchoServices. og metode.
-               EchoS.Dolt();
+              
+
+               NetworkStream ns = connectionSocket.GetStream();
+              
+
+               string theMessage = OpenReader(ns);
+
+               while (theMessage != null && theMessage != "")
+               {
+
+                   Console.WriteLine("Client: " + theMessage);
+                
+                   theMessage = OpenReader(ns);
+
+
+               }
+              
+     
+               
+
+               ns.Close();
+               connectionSocket.Close();
+
+               Console.ReadLine();
            }
 
+            
            serverSocket.Stop();
+           connectionSocket.Close();
+       }
+
+       public void OpenWriter(NetworkStream ns, string message)
+       {
+           StreamWriter sw = new StreamWriter(ns);
+           sw.AutoFlush = true;
+           sw.Write(message);
+
+       }
+
+       public string OpenReader(NetworkStream ns)
+       {
+           StreamReader sr = new StreamReader(ns);
+           string getResponse = sr.ReadLine();
+
+           return getResponse;
+
        }
    }
 }

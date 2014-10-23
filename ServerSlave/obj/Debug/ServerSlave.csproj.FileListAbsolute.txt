@@ -13,4 +13,3 @@ C:\Users\Herprit\Desktop\Cracker\ServerSlave\ServerSlave\obj\Debug\ServerSlave.e
 C:\Users\Herprit\Desktop\Cracker\ServerSlave\ServerSlave\obj\Debug\ServerSlave.pdb
 C:\Users\Herprit\Desktop\Cracker\ServerSlave\ServerSlave\bin\Debug\ServerSlave.exe
 C:\Users\Herprit\Desktop\Cracker\ServerSlave\ServerSlave\bin\Debug\ServerSlave.pdb
-C:\Users\Herprit\Desktop\Cracker\ServerSlave\ServerSlave\obj\Debug\ServerSlave.csprojResolveAssemblyReference.cache
