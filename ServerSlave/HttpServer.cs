@@ -43,8 +43,14 @@ namespace ServerSlave
 
 
                }
-              
-     
+
+               string OkMessage = "OK";
+               OpenWriter(ns, OkMessage);
+               Console.WriteLine("Message Sent: " + OkMessage);
+ 
+               
+               
+
                
 
                ns.Close();
